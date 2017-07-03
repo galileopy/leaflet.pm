@@ -14,9 +14,6 @@
     "data-field-geojson",
     "ui-leaflet-draw"
   ],
-  "files": [
-    "dist"
-  ],
   "main": "dist/leaflet.pm.min.js",
   "dependencies": {
     "postinstall-build": "^5.0.0"
