@@ -18,7 +18,9 @@
     "dist"
   ],
   "main": "dist/leaflet.pm.min.js",
-  "dependencies": {},
+  "dependencies": {
+    "postinstall-build": "^5.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -41,7 +43,8 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack --config=webpack.dev.js",
     "test": "browserify ./spec/test.spec.js | tape-run",
-    "prepublish": "./node_modules/.bin/webpack --config=webpack.build.js"
+    "prepublish": "./node_modules/.bin/webpack --config=webpack.build.js",
+    "postinstall-build": "postinstall-build dist --script prepublish"
   },
   "repository": {
     "type": "git",
