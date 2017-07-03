@@ -41,7 +41,7 @@
     "dev": "./node_modules/.bin/webpack --config=webpack.dev.js",
     "test": "browserify ./spec/test.spec.js | tape-run",
     "prepublish": "./node_modules/.bin/webpack --config=webpack.build.js",
-    "postinstall-build": "postinstall-build dist --script prepublish"
+    "postinstall": "postinstall-build dist --script prepublish"
   },
   "repository": {
     "type": "git",
